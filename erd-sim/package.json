@@ -1,0 +1,17 @@
+{
+  "name": "erd-sim",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "serve": "serve . -l 3000",
+    "dev": "concurrently \"npm:watch\" \"npm:serve\""
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0",
+    "concurrently": "^9.0.0",
+    "serve": "^14.2.0"
+  }
+}
